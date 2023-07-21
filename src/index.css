@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom CSS for glowing effect */
+        .glow {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .glow:hover {
+            box-shadow: 0 0 25px rgb(206, 71, 193);
+        }
+        .img_glow {
+            transition: all 0.3s ease-in-out;
+        }
+        .img_glow{
+            box-shadow: 0 0 65px rgb(206, 71, 193);
+        }
+        .transition {
+            transition: all 0.7s ease-in-out;
+        }
+
+        .neon-button {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .neon-button:hover {
+            box-shadow: 0 0 20px rgba(102, 255, 255, 0.7);
+        }
+
+        /* .neon-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 255, 255, 0.4), transparent);
+            transition: left 0.3s ease-in-out;
+            z-index: -1;
+        } */
+
+        .neon-button:hover::before {
+            left: 100%;
+        }
